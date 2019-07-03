@@ -4,6 +4,9 @@
 #include <iostream>
 #include <ros/ros.h>
 #include <opencv2/highgui/highgui.hpp>
+#include <time.h>
+
+clock_t start = clock();
 
 int main(int argc, char** argv)
 {
@@ -16,6 +19,7 @@ int main(int argc, char** argv)
 
     cv::VideoCapture cap(0);
     cv::Mat frame;
+
     
     while(nh.ok())
     {
@@ -23,12 +27,18 @@ int main(int argc, char** argv)
 
         if(!frame.empty())
         {
+
             cv::imshow("frame", frame);
 
             msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg();
             pub.publish(msg);
 
-            cv::waitKey(1);
+            cv::waitKey(1000);
+
+            clock_t end = clock();
+            ROS_INFO("%0.4f sec..", (double)(end-start) / 100000); 
+            start = end;
+            
         }
 
         ros::spinOnce();

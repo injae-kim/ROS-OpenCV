@@ -3,6 +3,9 @@
 #include <image_transport/image_transport.h>
 #include <opencv2/highgui/highgui.hpp>
 #include <cv_bridge/cv_bridge.h>
+#include <time.h>
+
+clock_t start = clock();
 
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
@@ -10,6 +13,10 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
   {
     cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);
     cv::waitKey(1);
+
+    clock_t end = clock();
+    ROS_INFO("%0.4f sec..", (double)(end-start) / 100000); 
+    start = end;
   }
   catch (cv_bridge::Exception& e)
   {
@@ -26,7 +33,7 @@ int main(int argc, char **argv)
   cv::startWindowThread();
 
   image_transport::ImageTransport it(nh);
-  image_transport::Subscriber sub = it.subscribe("camera/image", 1, imageCallback);
+  image_transport::Subscriber sub = it.subscribe("camera/image", 100, imageCallback);
 
   ros::spin();
   cv::destroyWindow("view");
