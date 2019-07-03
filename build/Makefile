@@ -504,6 +504,19 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named opencv_sub
+
+# Build rule for target.
+opencv_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_sub
+.PHONY : opencv_sub
+
+# fast build rule for target.
+opencv_sub/fast:
+	$(MAKE) -f opencv/CMakeFiles/opencv_sub.dir/build.make opencv/CMakeFiles/opencv_sub.dir/build
+.PHONY : opencv_sub/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -685,6 +698,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... opencv_sub"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_py"

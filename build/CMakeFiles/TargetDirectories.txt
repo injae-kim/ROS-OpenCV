@@ -57,6 +57,7 @@
 /home/helios789/catkin_ws/build/opencv/CMakeFiles/install/local.dir
 /home/helios789/catkin_ws/build/opencv/CMakeFiles/list_install_components.dir
 /home/helios789/catkin_ws/build/opencv/CMakeFiles/install/strip.dir
+/home/helios789/catkin_ws/build/opencv/CMakeFiles/opencv_sub.dir
 /home/helios789/catkin_ws/build/opencv/CMakeFiles/edit_cache.dir
 /home/helios789/catkin_ws/build/opencv/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
 /home/helios789/catkin_ws/build/opencv/CMakeFiles/sensor_msgs_generate_messages_eus.dir

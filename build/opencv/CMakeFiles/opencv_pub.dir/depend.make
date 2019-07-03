@@ -3,6 +3,15 @@
 
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /home/helios789/catkin_ws/src/opencv/src/pub.cpp
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/camera_publisher.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/camera_subscriber.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/exception.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/image_transport.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/loader_fwds.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/publisher.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/single_subscriber_publisher.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/subscriber.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/image_transport/transport_hints.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d.hpp
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d/calib3d_c.h
@@ -192,8 +201,10 @@ opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/ros/typ
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CameraInfo.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CompressedImage.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/Image.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h

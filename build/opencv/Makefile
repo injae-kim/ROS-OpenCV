@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+opencv/CMakeFiles/opencv_sub.dir/rule:
+	cd /home/helios789/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv/CMakeFiles/opencv_sub.dir/rule
+.PHONY : opencv/CMakeFiles/opencv_sub.dir/rule
+
+# Convenience name for target.
+opencv_sub: opencv/CMakeFiles/opencv_sub.dir/rule
+
+.PHONY : opencv_sub
+
+# fast build rule for target.
+opencv_sub/fast:
+	cd /home/helios789/catkin_ws/build && $(MAKE) -f opencv/CMakeFiles/opencv_sub.dir/build.make opencv/CMakeFiles/opencv_sub.dir/build
+.PHONY : opencv_sub/fast
+
+# Convenience name for target.
 opencv/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/helios789/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 opencv/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : opencv/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
@@ -357,6 +372,33 @@ src/pub.cpp.s:
 	cd /home/helios789/catkin_ws/build && $(MAKE) -f opencv/CMakeFiles/opencv_pub.dir/build.make opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.s
 .PHONY : src/pub.cpp.s
 
+src/sub.o: src/sub.cpp.o
+
+.PHONY : src/sub.o
+
+# target to build an object file
+src/sub.cpp.o:
+	cd /home/helios789/catkin_ws/build && $(MAKE) -f opencv/CMakeFiles/opencv_sub.dir/build.make opencv/CMakeFiles/opencv_sub.dir/src/sub.cpp.o
+.PHONY : src/sub.cpp.o
+
+src/sub.i: src/sub.cpp.i
+
+.PHONY : src/sub.i
+
+# target to preprocess a source file
+src/sub.cpp.i:
+	cd /home/helios789/catkin_ws/build && $(MAKE) -f opencv/CMakeFiles/opencv_sub.dir/build.make opencv/CMakeFiles/opencv_sub.dir/src/sub.cpp.i
+.PHONY : src/sub.cpp.i
+
+src/sub.s: src/sub.cpp.s
+
+.PHONY : src/sub.s
+
+# target to generate assembly for a file
+src/sub.cpp.s:
+	cd /home/helios789/catkin_ws/build && $(MAKE) -f opencv/CMakeFiles/opencv_sub.dir/build.make opencv/CMakeFiles/opencv_sub.dir/src/sub.cpp.s
+.PHONY : src/sub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -368,6 +410,7 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... install/strip"
+	@echo "... opencv_sub"
 	@echo "... edit_cache"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_eus"
@@ -384,6 +427,9 @@ help:
 	@echo "... src/pub.o"
 	@echo "... src/pub.i"
 	@echo "... src/pub.s"
+	@echo "... src/sub.o"
+	@echo "... src/sub.i"
+	@echo "... src/sub.s"
 .PHONY : help
 
 
