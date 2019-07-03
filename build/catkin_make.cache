@@ -1,0 +1,2 @@
+beginner_tutorials:opencv
+-DCATKIN_DEVEL_PREFIX=/home/helios789/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/helios789/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/helios789/catkin_ws/install
+
+Name: opencv_video_streaming
+Description: Description of opencv_video_streaming
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/helios789/catkin_ws/install/lib 
+Requires: 

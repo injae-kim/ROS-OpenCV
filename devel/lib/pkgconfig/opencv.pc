@@ -1,0 +1,8 @@
+prefix=/home/helios789/catkin_ws/devel
+
+Name: opencv
+Description: Description of opencv
+Version: 0.0.0
+Cflags: -I/home/helios789/catkin_ws/src/opencv/include
+Libs: -L/home/helios789/catkin_ws/devel/lib -lopencv
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs
