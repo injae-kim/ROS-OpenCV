@@ -207,6 +207,9 @@ opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/std_msgs/MultiArrayDimension.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/std_msgs/MultiArrayLayout.h
+opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/std_msgs/UInt8MultiArray.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 opencv/CMakeFiles/opencv_pub.dir/src/pub.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 
