@@ -15,7 +15,7 @@ int main(int argc, char** argv)
     ros::init(argc, argv, "opencv_pub");
     
     ros::NodeHandle nh;
-    ros::Publisher pub = nh.advertise<std_msgs::UInt8MultiArray>("camera/image", 1);
+    ros::Publisher pub = nh.advertise<std_msgs::UInt8MultiArray>("camera/image", 1000);
 
     cv::VideoCapture cap(0);
     cv::Mat frame;
@@ -29,16 +29,22 @@ int main(int argc, char** argv)
         {
 
             cv::imshow("frame", frame);
+            // cv::imwrite("/home/helios789/catkin_ws/origin.jpg", frame);
+
+            cv::resize(frame, frame, cv::Size(256, 256), 0, 0);
 
             // Encode - Decode image            
             std::vector<uchar> encode;
             std::vector<int> encode_param;
             encode_param.push_back(CV_IMWRITE_JPEG_QUALITY);
-            encode_param.push_back(1);
+            encode_param.push_back(80);
             
             cv::imencode(".jpg", frame, encode, encode_param);
+
             cv::Mat decode = cv::imdecode(encode, 1);
             cv::imshow("decode", decode);
+
+            // cv::imwrite("/home/helios789/catkin_ws/encode.jpg", decode);
 
             std_msgs::UInt8MultiArray msgArray;
             msgArray.data.clear();

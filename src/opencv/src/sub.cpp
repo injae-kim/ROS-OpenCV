@@ -35,7 +35,7 @@ int main(int argc, char **argv)
   cv::startWindowThread();
 
   ros::NodeHandle nh;
-  ros::Subscriber sub = nh.subscribe("camera/image", 5, imageCallback);
+  ros::Subscriber sub = nh.subscribe("camera/image", 1000, imageCallback);
 
   ros::spin();
   cv::destroyWindow("view");
