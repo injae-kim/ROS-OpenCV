@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package (OpenCV REQUIRED)
+# find_package (OpenCV 3.3.1 REQUIRED) if you have certain OpenCV version, default opencv version is 2
 
 catkin_package(
   INCLUDE_DIRS include

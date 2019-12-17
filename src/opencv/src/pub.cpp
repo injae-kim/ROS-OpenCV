@@ -34,7 +34,7 @@ int main(int argc, char** argv)
             std::vector<uchar> encode;
             std::vector<int> encode_param;
             encode_param.push_back(CV_IMWRITE_JPEG_QUALITY);
-            encode_param.push_back(20);
+            encode_param.push_back(1);
             
             cv::imencode(".jpg", frame, encode, encode_param);
             cv::Mat decode = cv::imdecode(encode, 1);
